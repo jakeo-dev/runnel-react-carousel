@@ -1,0 +1,44 @@
+{
+    "name": "runnel-react-carousel",
+    "version": "1.0.0",
+    "description": "",
+    "type": "module",
+    "main": "dist/runnel-react-carousel.cjs",
+    "module": "dist/runnel-react-carousel.js",
+    "types": "dist/runnel-react-carousel.d.ts",
+    "styles": "dist/runnel-react-carousel.css",
+    "files": [
+        "dist",
+        "package.json",
+        "README.md"
+    ],
+    "keywords": [
+        "react",
+        "carousel",
+        "component",
+        "image",
+        "react js",
+        "next"
+    ],
+    "author": "Jake O. <hi@jakeo.dev> (https://jakeo.dev/)",
+    "license": "MIT",
+    "peerDependencies": {
+        "react": "^19.1.0",
+        "react-dom": "^19.1.0"
+    },
+    "dependencies": {
+        "react": "^19.1.0",
+        "react-dom": "^19.1.0",
+        "vite-plugin-dts": "^4.5.4"
+    },
+    "devDependencies": {
+        "@types/node": "^24.1.0",
+        "@vitejs/plugin-react": "^4.7.0",
+        "autoprefixer": "^10.4.21",
+        "typescript": "^5.8.3",
+        "vite": "^7.0.5"
+    },
+    "scripts": {
+        "build": "vite build"
+    }
+}
