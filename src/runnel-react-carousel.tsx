@@ -125,13 +125,17 @@ export default function ImageCarousel({
                 : controlsColor == "transparent-light"
                 ? "text-gray-100-carousel hover:text-gray-200-carousel active:text-gray-300-carousel drop-shadow-sm-carousel hover:drop-shadow-md-carousel active:drop-shadow-none-carousel"
                 : ""
-            } ${
-              arrowsSize == "sm"
-                ? "-mt-[0.025rem]-carousel"
-                : "-mt-[0.05rem]-carousel"
             }`}
           >
-            <div className="rotate-180-carousel pl-0.5-carousel">▶</div>
+            <div
+              className={`rotate-180-carousel pl-0.5-carousel ${
+                arrowsSize == "sm"
+                  ? "-mt-[0.03rem]-carousel"
+                  : "-mt-[0.05rem]-carousel"
+              }`}
+            >
+              ▶
+            </div>
           </button>
 
           <button
@@ -154,13 +158,17 @@ export default function ImageCarousel({
                 : controlsColor == "transparent-light"
                 ? "text-gray-100-carousel hover:text-gray-200-carousel active:text-gray-300-carousel drop-shadow-sm-carousel hover:drop-shadow-md-carousel active:drop-shadow-none-carousel"
                 : ""
-            } ${
-              arrowsSize == "sm"
-                ? "-mt-[0.025rem]-carousel"
-                : "-mt-[0.05rem]-carousel"
             }`}
           >
-            <div className="pl-0.5-carousel">▶</div>
+            <div
+              className={`pl-0.5-carousel ${
+                arrowsSize == "sm"
+                  ? "-mb-[0.03rem]-carousel"
+                  : "-mb-[0.05rem]-carousel"
+              }`}
+            >
+              ▶
+            </div>
           </button>
         </div>
       ) : (

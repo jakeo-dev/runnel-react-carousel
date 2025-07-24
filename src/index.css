@@ -250,8 +250,15 @@
 .-mt-\[0\.05rem\]-carousel {
   margin-top: -0.05rem;
 }
-.-mt-\[0\.025rem\]-carousel {
-  margin-top: -0.025rem;
+.-mt-\[0\.03rem\]-carousel {
+  margin-top: -0.03rem;
+}
+
+.-mb-\[0\.05rem\]-carousel {
+  margin-bottom: -0.05rem;
+}
+.-mb-\[0\.03rem\]-carousel {
+  margin-bottom: -0.03rem;
 }
 
 .text-2xl-carousel {
