@@ -20,6 +20,7 @@ export default function ImageCarousel({
   images: {
     src: string;
     alt?: string;
+    description?: string; // optional description to show at the top of carousel
     className?: string; // any class names that apply to one image
     position?:
       | "top-left"
@@ -94,6 +95,28 @@ export default function ImageCarousel({
           />
         ))}
       </div>
+
+      {images[currentIndex].description ? (
+        <div className="absolute-carousel top-0-carousel flex-carousel w-full-carousel items-center-carousel justify-center-carousel">
+          <span
+            className={`carousel-button flex-carousel w-full-carousel items-center-carousel justify-center-carousel py-2-carousel ${
+              controlsColor == "dark"
+                ? "bg-gray-600/60-carousel text-white-carousel"
+                : controlsColor == "light"
+                ? "bg-gray-300/60-carousel text-black-carousel"
+                : controlsColor == "transparent-dark"
+                ? "text-gray-900-carousel drop-shadow-sm-carousel"
+                : controlsColor == "transparent-light"
+                ? "text-gray-100-carousel drop-shadow-sm-carousel"
+                : ""
+            }`}
+          >
+            {images[currentIndex].description}
+          </span>
+        </div>
+      ) : (
+        <></>
+      )}
 
       {showArrows ? (
         <div

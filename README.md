@@ -78,9 +78,14 @@ ok here they are:
 - alt text for image
 - `string` (empty by default)
 
+##### `description`
+
+- description for image that appears at the top of the carousel
+- `string` (empty by default)
+
 ##### `className`
 
-- class name for one image
+- class name for an individual image
 - `string` (empty by default)
 
 ##### `fit`
@@ -95,7 +100,7 @@ ok here they are:
 
 ##### `duration`
 
-- duration that one image is visible
+- duration that an individual image is visible
 - `number` in milliseconds (uses `imagesDuration` by default if empty)
 
 ### `height` (required)
