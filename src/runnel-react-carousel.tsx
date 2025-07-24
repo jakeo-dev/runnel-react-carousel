@@ -21,21 +21,16 @@ export default function ImageCarousel({
     alt?: string;
     className?: string; // any class names that apply to one image
     position?:
-      | "object-top-left"
-      | "object-top"
-      | "object-top-right"
-      | "object-left"
-      | "object-center"
-      | "object-right"
-      | "object-bottom-left"
-      | "object-bottom"
-      | "object-bottom-right";
-    fit?:
-      | "object-cover"
-      | "object-contain"
-      | "object-fill"
-      | "object-scale-down"
-      | "object-none";
+      | "top-left"
+      | "top"
+      | "top-right"
+      | "left"
+      | "center"
+      | "right"
+      | "bottom-left"
+      | "bottom"
+      | "bottom-right";
+    fit?: "cover" | "contain" | "fill" | "scale-down" | "none";
     duration?: number; // image duration that applies to one image
   }[]; // array of each image and their alt texts (REQUIRED)
   height: string; // any css height (REQUIRED)
@@ -91,8 +86,8 @@ export default function ImageCarousel({
             alt={image.alt || ""}
             className={`absolute-carousel h-full-carousel w-full-carousel transition-opacity-carousel duration-${transitionDuration}-carousel ${
               i == currentIndex ? "opacity-100-carousel" : "opacity-0-carousel"
-            } ${image.position || "object-center"}-carousel ${
-              image.fit || "object-cover"
+            } object-${image.position || "center"}-carousel object-${
+              image.fit || "cover"
             }-carousel ${imagesClassName} ${image.className || ""}`}
           />
         ))}
@@ -130,17 +125,13 @@ export default function ImageCarousel({
                 : controlsColor == "transparent-light"
                 ? "text-gray-100-carousel hover:text-gray-200-carousel active:text-gray-300-carousel drop-shadow-sm-carousel hover:drop-shadow-md-carousel active:drop-shadow-none-carousel"
                 : ""
+            } ${
+              arrowsSize == "sm"
+                ? "pt-[0.1rem]-carousel"
+                : "pt-[0.15rem]-carousel"
             }`}
           >
-            <div
-              className={`${
-                arrowsSize == "sm"
-                  ? "pt-[0.1rem]-carousel"
-                  : "pt-[0.15rem]-carousel"
-              } rotate-180-carousel pl-0.5-carousel`}
-            >
-              ▶
-            </div>
+            <div className="rotate-180-carousel pl-0.5-carousel">▶</div>
           </button>
 
           <button
@@ -163,17 +154,13 @@ export default function ImageCarousel({
                 : controlsColor == "transparent-light"
                 ? "text-gray-100-carousel hover:text-gray-200-carousel active:text-gray-300-carousel drop-shadow-sm-carousel hover:drop-shadow-md-carousel active:drop-shadow-none-carousel"
                 : ""
+            } ${
+              arrowsSize == "sm"
+                ? "pt-[0.1rem]-carousel"
+                : "pt-[0.15rem]-carousel"
             }`}
           >
-            <div
-              className={`${
-                arrowsSize == "sm"
-                  ? "pt-[0.1rem]-carousel"
-                  : "pt-[0.15rem]-carousel"
-              } pl-0.5-carousel`}
-            >
-              ▶
-            </div>
+            <div className="pl-0.5-carousel">▶</div>
           </button>
         </div>
       ) : (
