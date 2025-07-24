@@ -6,6 +6,7 @@ export default function ImageCarousel({
   width = "100%",
   className,
   imagesClassName = "",
+  firstImageIndex = 0,
   autoplay = true,
   imagesDuration = 5000,
   loop = true,
@@ -37,6 +38,7 @@ export default function ImageCarousel({
   width?: string; // any css width
   className?: string; // any class names for carousel
   imagesClassName?: string; // any class names that apply to all the images
+  firstImageIndex?: number; // index of first image to display
   autoplay?: boolean; // automatically goes to next image after image duration
   imagesDuration?: number; // any positive number for image duration, applies to all images
   loop?: boolean; // loops back to first image after last one
@@ -47,7 +49,7 @@ export default function ImageCarousel({
   showDots?: boolean; // shows nav dots
   showArrows?: boolean; // shows nav arrows
 }) {
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const [currentIndex, setCurrentIndex] = useState(firstImageIndex);
 
   const prevSlide = () => {
     if (loop)

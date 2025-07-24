@@ -8,6 +8,7 @@ maybe because it has...
 
 - toggleable autoplay
 - toggleable looping
+- arrow and dot navigation
 - ability to change size of controls
 - dark and light themes
 - fade transitions
@@ -67,97 +68,105 @@ ok here they are:
 
 ### `images` (required)
 
-#### `src` (required)
+##### `src` (required)
 
 - path to image source
+- `string`
 
-#### `alt`
+##### `alt`
 
 - alt text for image
-- string (empty by default)
+- `string` (empty by default)
 
-#### `className`
+##### `className`
 
 - class name for one image
-- string (empty by default)
+- `string` (empty by default)
 
-#### `fit`
+##### `fit`
 
 - css fit of image
-- cover, contain, fill, scale-down, or none (cover by default)
+- `string`: cover, contain, fill, scale-down, or none (cover by default)
 
-#### `position`
+##### `position`
 
-- positioning of image, useful for cover fit
-- top-left, top, top-right, left, center, right, bottom-left, bottom, bottom-right (center by default)
+- css positioning of image, useful for cover fit
+- `string`: top-left, top, top-right, left, center, right, bottom-left, bottom, bottom-right (center by default)
 
-#### `duration`
+##### `duration`
 
 - duration that one image is visible
-- any positive number in milliseconds (5000 by default)
+- `number` in milliseconds (uses `imagesDuration` by default if empty)
 
 ### `height` (required)
 
 - any valid css height
+- `string`
 
 ### `width`
 
 - any valid css width (100% by default)
+- `string`
 
 ### `className`
 
 - class name that applies to the carousel component
-- string (empty by default)
+- `string` (empty by default)
 
 ### `imagesClassName`
 
 - class name that applies to all image elements
-- string (empty by default)
+- `string` (empty by default)
+
+### `firstImageIndex`
+
+- index of first image to display when the page loads
+- `number` (0 by default)
 
 ### `autoplay`
 
 - auto cycle through each image when true
-- boolean (true by default)
+- `boolean` (true by default)
 
 ### `imagesDuration`
 
 - duration that each image is visible
-- any positive number in milliseconds (5000 by default)
+- `number` in milliseconds (5000 by default)
 
 ### `loop`
 
 - go to first image after last image when true
-- boolean (true by default)
+- `boolean` (true by default)
 
 ### `transitionDuration`
 
 - duration of fade transition between images
-- 75, 100, 150, 200, 300, 500, 700, or 1000 (500 by default)
+- `number`: 75, 100, 150, 200, 300, 500, 700, or 1000 (500 by default)
 
 ### `controlsColor`
 
 - color/theme of arrows and dots navigation
-- dark, light, transparent-dark, or transparent-light (dark by default)
+- `string`: dark, light, transparent-dark, or transparent-light (dark by default)
 
 ### `arrowsSize`
 
 - size of arrows
-- sm, md, lg, or xl (md by default)
+- `string`: sm, md, lg, or xl (md by default)
 
 ### `arrowsPosition`
 
 - position of arrows
-- middle, bottom, or bottom-center (middle by default)
+- `string`: middle, bottom, or bottom-center (middle by default)
 
 ### `showDots`
 
 - whether to show dot navigation
-- boolean (true by default)
+- `boolean` (true by default)
 
 ### `showArrows`
 
 - whether to show arrow navigation
-- boolean (true by default)
+- `boolean` (true by default)
 
 ## What does runnel actually mean?
 
