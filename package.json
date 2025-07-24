@@ -1,6 +1,6 @@
 {
     "name": "runnel-react-carousel",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "A simple image carousel React component.",
     "type": "module",
     "main": "dist/runnel-react-carousel.cjs",

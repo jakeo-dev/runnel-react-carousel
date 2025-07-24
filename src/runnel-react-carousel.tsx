@@ -127,8 +127,8 @@ export default function ImageCarousel({
                 : ""
             } ${
               arrowsSize == "sm"
-                ? "pt-[0.1rem]-carousel"
-                : "pt-[0.15rem]-carousel"
+                ? "-mt-[0.025rem]-carousel"
+                : "-mt-[0.05rem]-carousel"
             }`}
           >
             <div className="rotate-180-carousel pl-0.5-carousel">▶</div>
@@ -156,8 +156,8 @@ export default function ImageCarousel({
                 : ""
             } ${
               arrowsSize == "sm"
-                ? "pt-[0.1rem]-carousel"
-                : "pt-[0.15rem]-carousel"
+                ? "-mt-[0.025rem]-carousel"
+                : "-mt-[0.05rem]-carousel"
             }`}
           >
             <div className="pl-0.5-carousel">▶</div>

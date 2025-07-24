@@ -246,11 +246,12 @@
 .pl-0\.5-carousel {
   padding-left: 0.125rem;
 }
-.pt-\[0\.15rem\]-carousel {
-  padding-top: 0.15rem;
+
+.-mt-\[0\.05rem\]-carousel {
+  margin-top: -0.05rem;
 }
-.pt-\[0\.1rem\]-carousel {
-  padding-top: 0.1rem;
+.-mt-\[0\.025rem\]-carousel {
+  margin-top: -0.025rem;
 }
 
 .text-2xl-carousel {
