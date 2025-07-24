@@ -1,6 +1,6 @@
 {
     "name": "runnel-react-carousel",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "description": "A simple image carousel React component.",
     "type": "module",
     "main": "dist/runnel-react-carousel.cjs",
@@ -21,6 +21,10 @@
         "next"
     ],
     "author": "Jake O. <hi@jakeo.dev> (https://jakeo.dev/)",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/jakeo-dev/runnel-react-carousel.git"
+    },
     "license": "MIT",
     "peerDependencies": {
         "react": "^19.1.0",
